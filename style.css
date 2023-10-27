@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+
+.shortcuts {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+  /* padding: 10px; */
+  background-color: rgb(173, 218, 244);
+  border-color: transparent;
+  border-radius: 90px;
+  font-size: 8px;
+  width: 64px;
+  height: 64px;
+}
+
+footer {
+  padding: 10px;
+  background-color: rgb(249, 247, 150);
+}
+
+.copiright {
+  margin: 0;
+  text-align: center;
+}
