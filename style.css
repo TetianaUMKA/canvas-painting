@@ -40,6 +40,17 @@ footer {
   z-index: 10;
 }
 
+.shortcuts-close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
 .overlay {
   position: absolute;
   top: 0;
