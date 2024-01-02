@@ -13,21 +13,24 @@
     </header>
     <main>
       <canvas id="canvas" style="display: block">Canvas</canvas>
-      <button class="shortcuts" id="open-shortcuts-modal-btn">
+      <button class="shortcuts-open-btn" id="open-shortcuts-modal-btn">
         KEYBOARD SHORTCUTS
       </button>
     </main>
     <footer>
       <p class="copiright">Copyright © 2023. Developed by Tetiana Tkachuk</p>
     </footer>
-    <div class="shortcuts-modal-container" id="shortcuts-modal">
-      <button class="close-btn"></button>
+    <div class="shortcuts-modal-container hidden" id="shortcuts-modal">
+      <button class="shortcuts-close-btn" id="close-shortcuts-modal-btn"></button>
       <h2>Keyboard shortcuts</h1>
       <ul>
         <li>C => save</li>
-        <li></li>
+        <li>V => play saved</li>
+        <li>Z => clear the drawing </li>
       </ul>
     </div>
+    <div class="overlay hidden"></div>
     <script src="./canvas.js"></script>
+    <script src="./shortcuts-modal.js"></script>
   </body>
 </html>
