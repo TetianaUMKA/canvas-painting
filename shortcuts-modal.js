@@ -3,9 +3,7 @@
 const shortcutsModal = document.querySelector(".shortcuts-modal-container");
 const overlay = document.querySelector(".overlay");
 const openShortcutsModalBtn = document.querySelector(".shortcuts-open-btn");
-const closeShortcutsModalBtn = document.querySelector(
-  "#close-shortcuts-modal-btn"
-);
+const closeShortcutsModalBtn = document.querySelector(".shortcuts-close-btn");
 
 const openShortcutsModal = function () {
   shortcutsModal.classList.remove("hidden");
