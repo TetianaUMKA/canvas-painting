@@ -1,24 +1,33 @@
-"use strict";
-let canv = document.getElementById("canvas"),
-  ctx = canv.getContext("2d"),
+'use strict';
+
+const startCanvasBtn = document.querySelector('.start-canvas-btn');
+const canvasContainer = document.querySelector('.canvas-container');
+startCanvasBtn.addEventListener('click', function () {
+  canvasContainer.classList.remove('hidden');
+  startCanvasBtn.classList.add('hidden');
+  console.log('click');
+});
+
+let canv = document.getElementById('canvas'),
+  ctx = canv.getContext('2d'),
   isMouseDown = false,
   coords = [];
 
 canv.width = window.innerWidth;
 canv.height = window.innerHeight;
 
-canv.addEventListener("mousedown", function () {
+canv.addEventListener('mousedown', function () {
   isMouseDown = true;
 });
 
-canv.addEventListener("mouseup", function () {
+canv.addEventListener('mouseup', function () {
   isMouseDown = false;
   ctx.beginPath();
-  coords.push("mouseup");
+  coords.push('mouseup');
 });
 
 ctx.lineWidth = 5 * 2;
-canv.addEventListener("mousemove", function (e) {
+canv.addEventListener('mousemove', function (e) {
   if (isMouseDown) {
     coords.push([e.clientX, e.clientY]);
 
@@ -35,15 +44,15 @@ canv.addEventListener("mousemove", function (e) {
 });
 
 function save() {
-  localStorage.setItem("coords", JSON.stringify(coords));
+  localStorage.setItem('coords', JSON.stringify(coords));
 }
 
 function clear() {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = 'rgb(204, 231, 247)';
   ctx.fillRect(0, 0, canv.width, canv.height);
 
   ctx.beginPath();
-  ctx.fillStyle = "black";
+  ctx.fillStyle = 'black';
 }
 
 function replay() {
@@ -55,8 +64,8 @@ function replay() {
     }
     const crd = coords.shift(),
       e = {
-        clientX: crd["0"],
-        clientY: crd["1"],
+        clientX: crd['0'],
+        clientY: crd['1'],
       };
 
     ctx.lineTo(e.clientX, e.clientY);
@@ -71,25 +80,25 @@ function replay() {
   }, 30);
 }
 
-document.addEventListener("keydown", function (e) {
+document.addEventListener('keydown', function (e) {
   // console.log(e.keyCode);
   if (e.keyCode === 67) {
     // save C
     save();
-    console.log("Saved");
+    console.log('Saved');
   }
   if (e.keyCode == 86) {
     // replay V
-    coords = JSON.parse(localStorage.getItem("coords"));
+    coords = JSON.parse(localStorage.getItem('coords'));
 
     clear();
     replay();
 
-    console.log("Replayed");
+    console.log('Replayed');
   }
   if (e.keyCode == 90) {
     // clear Z
     clear();
-    console.log("Cleared");
+    console.log('Cleared');
   }
 });
