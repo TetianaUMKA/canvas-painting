@@ -65,12 +65,27 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 50%;
   background-color: rgb(173, 218, 244);
   padding: 96px;
   border-radius: 5px;
   box-shadow: 0 48px 80px rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+h2 {
+  text-align: center;
+  margin: 60px;
+  font-size: xx-large;
+}
+
+.shortcuts-list {
+  display: flex;
+  justify-content: space-around;
+}
+.shortcuts-list-item {
+  list-style: none;
+  font-size: x-large;
 }
 
 .shortcuts-close-btn {
