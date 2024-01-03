@@ -9,16 +9,19 @@
   </head>
   <body style="margin: 0">
     <header>
-      <h1>Try to paint by moving the mouse</h1>
+        <h1>Try to paint by moving the mouse</h1>
     </header>
     <main>
-      <canvas id="canvas" style="display: block">Canvas</canvas>
+      <div class="painting-space">
+        <button class="start-canvas-btn">START</button>  
+       <div class="canvas-container hidden"> <canvas id="canvas" style="display: block">Canvas</canvas></div>
+      </div>
       <button class="shortcuts-open-btn">
         KEYBOARD SHORTCUTS
       </button>
     </main>
     <footer>
-      <p class="copiright">Copyright © 2023. Developed by Tetiana Tkachuk</p>
+      <p class="copiright">Copyright 	&copy; 2023. Developed by Tetiana Tkachuk</p>
     </footer>
     <div class="shortcuts-modal-container hidden">
       <button class="shortcuts-close-btn">&times;</button>
