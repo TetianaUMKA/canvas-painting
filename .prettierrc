@@ -1,0 +1,5 @@
+{
+  "single": true,
+  "arrowParens": "avoid",
+  "singleQuote": true
+}
