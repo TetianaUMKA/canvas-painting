@@ -15,8 +15,8 @@ h1 {
   position: relative;
   top: 35%;
   left: 45%;
-  font-size: x-large;
-  padding: 20px 40px;
+  font-size: xx-large;
+  padding: 40px 80px;
   border-radius: 10px;
   border: transparent;
   background-color: rgb(173, 218, 244);
@@ -40,9 +40,9 @@ h1 {
   background-color: rgb(173, 218, 244);
   border-color: transparent;
   border-radius: 90px;
-  font-size: 8px;
-  width: 64px;
-  height: 64px;
+  font-size: 10px;
+  width: 80px;
+  height: 80px;
 }
 .shortcuts-open-btn:hover,
 .shortcuts-open-btn:focus {
@@ -67,17 +67,17 @@ footer {
   transform: translate(-50%, -50%);
   width: 70%;
   background-color: rgb(173, 218, 244);
-  padding: 6rem;
+  padding: 96px;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 48px 80px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
 .shortcuts-close-btn {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 2.5rem;
+  top: 20px;
+  right: 32px;
+  font-size: 40px;
   color: #333;
   cursor: pointer;
   border: none;
