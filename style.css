@@ -1,9 +1,8 @@
 :root {
   box-sizing: border-box;
 }
-
-body {
-  cursor: url(/images/cursor.png), auto;
+button {
+  cursor: pointer;
 }
 
 header {
@@ -34,6 +33,9 @@ h1 {
   height: 100vh;
   background-color: rgb(204, 231, 247);
   backdrop-filter: blur(3px);
+}
+.canvas-container {
+  cursor: url(/images/cursor.png), auto;
 }
 
 .shortcuts-open-btn {
