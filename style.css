@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: url(/image/cursor.png), auto;
+}
+
 header {
   background-color: rgb(246, 245, 207);
   padding: 20px 0 10px 0;
