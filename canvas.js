@@ -82,12 +82,12 @@ function replay() {
 
 document.addEventListener('keydown', function (e) {
   // console.log(e.keyCode);
-  if (e.keyCode === 67) {
+  if (e.key === 'c') {
     // save C
     save();
     console.log('Saved');
   }
-  if (e.keyCode == 86) {
+  if (e.key === 'v') {
     // replay V
     coords = JSON.parse(localStorage.getItem('coords'));
 
@@ -96,7 +96,7 @@ document.addEventListener('keydown', function (e) {
 
     console.log('Replayed');
   }
-  if (e.keyCode == 90) {
+  if (e.key === 'z') {
     // clear Z
     clear();
     console.log('Cleared');
