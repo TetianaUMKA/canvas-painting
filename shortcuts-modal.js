@@ -1,20 +1,20 @@
-"use strict";
+'use strict';
 
-const shortcutsModal = document.querySelector(".shortcuts-modal-container");
-const overlay = document.querySelector(".overlay");
-const openShortcutsModalBtn = document.querySelector(".shortcuts-open-btn");
-const closeShortcutsModalBtn = document.querySelector(".shortcuts-close-btn");
+const shortcutsModal = document.querySelector('.shortcuts-modal-container');
+const overlay = document.querySelector('.overlay');
+const openShortcutsModalBtn = document.querySelector('.shortcuts-open-btn');
+const closeShortcutsModalBtn = document.querySelector('.shortcuts-close-btn');
 
 const openShortcutsModal = function () {
-  shortcutsModal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-  console.log("click");
+  shortcutsModal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+  console.log('click');
 };
 const closeShortcutsModal = function () {
-  shortcutsModal.classList.add("hidden");
-  overlay.classList.add("hidden");
+  shortcutsModal.classList.add('hidden');
+  overlay.classList.add('hidden');
 };
 
-openShortcutsModalBtn.addEventListener("click", openShortcutsModal);
-closeShortcutsModalBtn.addEventListener("click", closeShortcutsModal);
-overlay.addEventListener("click", closeShortcutsModal);
+openShortcutsModalBtn.addEventListener('click', openShortcutsModal);
+closeShortcutsModalBtn.addEventListener('click', closeShortcutsModal);
+overlay.addEventListener('click', closeShortcutsModal);
