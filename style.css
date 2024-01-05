@@ -34,7 +34,7 @@ h1 {
   background-color: rgb(204, 231, 247);
   backdrop-filter: blur(3px);
 }
-.canvas-container {
+.canvas-container.cursor {
   cursor: url(/images/cursor.png), auto;
 }
 
