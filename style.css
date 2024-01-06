@@ -32,10 +32,9 @@ h1 {
 .drawing-space {
   height: 100vh;
   background-color: rgb(204, 231, 247);
-  backdrop-filter: blur(3px);
 }
 .canvas-container.cursor {
-  cursor: url(images/cursor.cur), auto;
+  cursor: url(images/cursor.cur) 0 0, auto;
 }
 
 .shortcuts-open-btn {
