@@ -3,7 +3,7 @@
 }
 button {
   /* cursor: pointer; */
-  cursor: url(/images/cursor.cur), auto;
+  cursor: url(cursor.cur), pointer;
 }
 
 header {
@@ -36,7 +36,7 @@ h1 {
   backdrop-filter: blur(3px);
 }
 .canvas-container.cursor {
-  cursor: url(/images/cursor.cur), auto;
+  cursor: url(cursor.cur), auto;
 }
 
 .shortcuts-open-btn {
