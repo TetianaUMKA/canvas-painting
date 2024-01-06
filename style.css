@@ -35,7 +35,7 @@ h1 {
   backdrop-filter: blur(3px);
 }
 .canvas-container.cursor {
-  cursor: url(/images/cursor.png), auto;
+  cursor: url(/images/cursor.cur), auto;
 }
 
 .shortcuts-open-btn {
