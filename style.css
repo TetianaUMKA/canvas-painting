@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 button {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url(/images/cursor.cur), auto;
 }
 
 header {
